@@ -181,19 +181,16 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@id/buttonDot"
             app:layout_constraintTop_toTopOf="@id/buttonDot"
-            app:layout_constraintEnd_toStartOf="@id/buttonBackSpace"
+            app:layout_constraintEnd_toStartOf="@id/buttonDelete"
             app:layout_constraintBottom_toBottomOf="@id/buttonDot"/>
 
-        <Button
-            android:id="@+id/buttonBackSpace"
+        <ImageButton
+            android:id="@+id/buttonDelete"
             android:layout_width="@dimen/dp_0"
             android:layout_height="@dimen/dp_0"
             style="@style/DayNightCustomNumberKeyboardButtonStyle"
             android:background="@color/transparent"
-            app:icon="@drawable/ic_delete_backspace"
-            app:iconGravity="textEnd"
-            app:iconTint="@color/color_primary"
-            app:iconPadding="-05dp"
+            android:src="@drawable/ic_delete_backspace"
             app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/button0"
