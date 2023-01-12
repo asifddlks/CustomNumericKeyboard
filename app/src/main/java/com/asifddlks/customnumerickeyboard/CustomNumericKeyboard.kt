@@ -9,10 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.inputmethod.ExtractedTextRequest
 import android.view.inputmethod.InputConnection
-import android.widget.Button
-import android.widget.ImageButton
 import android.widget.LinearLayout
-import androidx.core.content.ContextCompat
 import com.asifddlks.customnumerickeyboard.databinding.LayoutNumberKeyboardBinding
 
 
@@ -34,10 +31,10 @@ class CustomNumericKeyboard @JvmOverloads constructor(
     private var inputConnection: InputConnection? = null
 
     init {
-        init(context, attrs)
+        init(context)
     }
 
-    private fun init(context: Context, attrs: AttributeSet?) {
+    private fun init(context: Context) {
 
         // initialize buttons
         _binding = LayoutNumberKeyboardBinding.inflate(LayoutInflater.from(context), this,true)
