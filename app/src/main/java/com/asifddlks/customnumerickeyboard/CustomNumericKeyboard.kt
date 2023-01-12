@@ -13,6 +13,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
+import com.asifddlks.customnumerickeyboard.databinding.LayoutNumberKeyboardBinding
 
 
 //
@@ -23,28 +24,15 @@ class CustomNumericKeyboard @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr), View.OnClickListener {
-    // keyboard keys (buttons)
-    private lateinit var button1: Button
-    private lateinit var button2: Button
-    private lateinit var button3: Button
-    private lateinit var button4: Button
-    private lateinit var button5: Button
-    private lateinit var button6: Button
-    private lateinit var button7: Button
-    private lateinit var button8: Button
-    private lateinit var button9: Button
-    private lateinit var button0: Button
-    private lateinit var buttonDot: Button
-    private lateinit var buttonDelete: ImageButton
 
-    // This will map the button resource id to the String value that we want to
-    // input when that button is clicked.
+    private var _binding: LayoutNumberKeyboardBinding? = null
+    private val binding get() = _binding!!
+
     private var keyValues = SparseArray<String>()
 
     // Our communication link to the EditText
     private var inputConnection: InputConnection? = null
 
-    // constructors
     init {
         init(context, attrs)
     }
@@ -52,33 +40,20 @@ class CustomNumericKeyboard @JvmOverloads constructor(
     private fun init(context: Context, attrs: AttributeSet?) {
 
         // initialize buttons
-        LayoutInflater.from(context).inflate(R.layout.layout_number_keyboard, this, true)
-        button1 = findViewById<Button>(R.id.button1)
-        button2 = findViewById<Button>(R.id.button2)
-        button3 = findViewById<Button>(R.id.button3)
-        button4 = findViewById<Button>(R.id.button4)
-        button5 = findViewById<Button>(R.id.button5)
-        button6 = findViewById<Button>(R.id.button6)
-        button7 = findViewById<Button>(R.id.button7)
-        button8 = findViewById<Button>(R.id.button8)
-        button9 = findViewById<Button>(R.id.button9)
-        button0 = findViewById<Button>(R.id.button0)
-        buttonDot = findViewById<Button>(R.id.buttonDot)
-        buttonDelete = findViewById<ImageButton>(R.id.buttonDelete)
+        _binding = LayoutNumberKeyboardBinding.inflate(LayoutInflater.from(context), this,true)
 
-        // set button click listeners
-        button1.setOnClickListener(this)
-        button2.setOnClickListener(this)
-        button3.setOnClickListener(this)
-        button4.setOnClickListener(this)
-        button5.setOnClickListener(this)
-        button6.setOnClickListener(this)
-        button7.setOnClickListener(this)
-        button8.setOnClickListener(this)
-        button9.setOnClickListener(this)
-        button0.setOnClickListener(this)
-        buttonDot.setOnClickListener(this)
-        buttonDelete.setOnClickListener(this)
+        binding.button1.setOnClickListener(this)
+        binding.button2.setOnClickListener(this)
+        binding.button3.setOnClickListener(this)
+        binding.button4.setOnClickListener(this)
+        binding.button5.setOnClickListener(this)
+        binding.button6.setOnClickListener(this)
+        binding.button7.setOnClickListener(this)
+        binding.button8.setOnClickListener(this)
+        binding.button9.setOnClickListener(this)
+        binding.button0.setOnClickListener(this)
+        binding.buttonDot.setOnClickListener(this)
+        binding.buttonDelete.setOnClickListener(this)
 
         // map buttons IDs to input strings
         keyValues.put(R.id.button1, context.getString(R.string._1))
@@ -140,19 +115,19 @@ class CustomNumericKeyboard @JvmOverloads constructor(
     }
 
     fun setAttribute(textColor: Int, hasDotKey: Boolean) {
-        button1.setTextColor(context.getColor(textColor))
-        button2.setTextColor(context.getColor(textColor))
-        button3.setTextColor(context.getColor(textColor))
-        button4.setTextColor(context.getColor(textColor))
-        button5.setTextColor(context.getColor(textColor))
-        button6.setTextColor(context.getColor(textColor))
-        button7.setTextColor(context.getColor(textColor))
-        button8.setTextColor(context.getColor(textColor))
-        button9.setTextColor(context.getColor(textColor))
-        button0.setTextColor(context.getColor(textColor))
-        buttonDot.setTextColor(context.getColor(textColor))
-        buttonDelete.imageTintList = ColorStateList.valueOf(context.getColor(textColor))
+        binding.button1.setTextColor(context.getColor(textColor))
+        binding.button2.setTextColor(context.getColor(textColor))
+        binding.button3.setTextColor(context.getColor(textColor))
+        binding.button4.setTextColor(context.getColor(textColor))
+        binding.button5.setTextColor(context.getColor(textColor))
+        binding.button6.setTextColor(context.getColor(textColor))
+        binding.button7.setTextColor(context.getColor(textColor))
+        binding.button8.setTextColor(context.getColor(textColor))
+        binding.button9.setTextColor(context.getColor(textColor))
+        binding.button0.setTextColor(context.getColor(textColor))
+        binding.buttonDot.setTextColor(context.getColor(textColor))
+        binding.buttonDelete.imageTintList = ColorStateList.valueOf(context.getColor(textColor))
 
-        buttonDot.visibility = if(hasDotKey) View.VISIBLE else View.VISIBLE
+        binding.buttonDot.visibility = if(hasDotKey) View.VISIBLE else View.VISIBLE
     }
 }
