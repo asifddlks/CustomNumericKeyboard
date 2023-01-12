@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DayBaseWhiteNightBlackBGTintStyle"
+        android:background="@drawable/bg_rounded_corner_20dp_stroke_1dp_green_level_22">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/dp_20" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/dp_20" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/dp_20" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="@dimen/dp_20" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:text="@string/_1"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:text="@string/_2"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button1"
+            app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:text="@string/_3"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:text="@string/_4"
+            android:layout_marginTop="@dimen/dp_14"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/button1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+             />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:text="@string/_5"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/button4"
+            app:layout_constraintTop_toTopOf="@id/button4"
+            app:layout_constraintEnd_toStartOf="@id/button6"
+            app:layout_constraintBottom_toBottomOf="@id/button4"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:text="@string/_6"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button5"
+            app:layout_constraintTop_toTopOf="@id/button4"
+            app:layout_constraintBottom_toBottomOf="@id/button4" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:text="@string/_7"
+            android:layout_marginTop="@dimen/dp_14"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/button4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:text="@string/_8"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/button7"
+            app:layout_constraintTop_toTopOf="@id/button7"
+            app:layout_constraintEnd_toStartOf="@id/button9"
+            app:layout_constraintBottom_toBottomOf="@id/button7"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:text="@string/_9"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button8"
+            app:layout_constraintTop_toTopOf="@id/button7"
+            app:layout_constraintBottom_toBottomOf="@id/button7" />
+
+        <Button
+            android:id="@+id/buttonDot"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:text="@string/dot"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/dp_14"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/button7"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:text="0"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/buttonDot"
+            app:layout_constraintTop_toTopOf="@id/buttonDot"
+            app:layout_constraintEnd_toStartOf="@id/buttonBackSpace"
+            app:layout_constraintBottom_toBottomOf="@id/buttonDot"/>
+
+        <Button
+            android:id="@+id/buttonBackSpace"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            style="@style/DayNightCustomNumberKeyboardButtonStyle"
+            android:background="@color/transparent"
+            app:icon="@drawable/ic_delete_backspace"
+            app:iconGravity="textEnd"
+            app:iconTint="@color/color_primary"
+            app:iconPadding="-05dp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button0"
+            app:layout_constraintTop_toTopOf="@id/buttonDot"
+            app:layout_constraintBottom_toBottomOf="@id/buttonDot" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

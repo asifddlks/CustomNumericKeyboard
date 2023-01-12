@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?><!--****************************************************************************
+  * Copyright TVL. 2022. All rights reserved.
+  * Last modified by asifAhmed on 12/30/22, 3:17 PM
+  ***************************************************************************-->
+
+<resources>
+    <!--    <color name="green">#00C806</color>-->
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="black_level_2">#8F000000</color>
+    <color name="black_level_3">#00000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="gray_level_1">#C4C4C4</color>
+    <color name="gray_level_2">#BBBBBB</color>
+    <color name="gray_level_3">#8F8F8F</color>
+    <color name="gray_level_4">#666666</color>
+    <color name="gray_level_5">#6F6F70</color>
+    <color name="gray_level_6">#808080</color>
+    <color name="gray_level_7">#1B1B1B</color>
+    <color name="gray_level_8">#1D1D1D</color>
+    <color name="gray_level_9">#CFCFCF</color>
+    <color name="gray_level_10">#E7E7E7</color>
+    <color name="gray_level_11">#A0A0A0</color>
+    <color name="gray_level_12">#707070</color>
+    <color name="gray_level_13">#474747</color>
+    <color name="gray_level_14">#E5E5E5</color>
+    <color name="gray_level_15">#111111</color>
+    <color name="gray_level_16">#615F5F</color>
+    <color name="gray_level_17">#2D2D2D</color>
+    <color name="gray_level_18">#303030</color>
+    <color name="gray_level_19">#CC111111</color>
+    <color name="gray_level_20">#747C74</color>
+    <color name="gray_level_21">#434343</color>
+    <color name="gray_level_22">#F3F3F3</color>
+    <color name="gray_level_23">#464646</color>
+    <color name="gray_level_24">#282828</color>
+    <color name="gray_level_25">#4D3C3C3C</color>
+    <color name="gray_level_26">#BF1E1E1E</color>
+    <color name="gray_level_27">#A6545458</color>
+    <color name="gray_level_28">#66FFFFFF</color>
+    <color name="gray_level_29">#80333333</color>
+    <color name="gray_level_30">#DEEADF</color>
+    <color name="gray_level_31">#0C0C0C</color>
+    <color name="gray_level_32">#33FFFFFF</color>
+    <color name="gray_level_33">#D9D9D9</color>
+    <color name="gray_level_34">#33FFFFFF</color>
+    <color name="gray_level_35">#33000000</color>
+    <color name="Base_Black100">#090909</color>
+
+
+    <!-- password strength color -->
+    <color name="color_primary">#00C806</color>
+    <color name="color_primary_opacity_10">#1A00C806</color>
+    <color name="bg_field">#272727</color>
+
+    <color name="poor_color">#C80000</color>
+    <color name="weak_color">#FF6B00</color>
+    <color name="average_color">#FFCE00</color>
+    <color name="strong_color">#00C806</color>
+    <color name="camera_rect_bg_color">#A6A6A6</color>
+    <color name="nid_passport_selected">#636366</color>
+    <color name="save_button_text_color">#000000</color>
+
+    <color name="green_level_3">#46FF28</color>
+    <color name="green_level_4">#8000C806</color>
+    <color name="green_level_5">#55FB64</color>
+    <color name="green_level_6">#5AFF40</color>
+    <color name="green_level_7">#3C9C36</color>
+    <color name="green_level_8">#002513</color>
+    <color name="green_level_9">#00CD06</color>
+    <color name="green_level_10">#5AFF40</color>
+    <color name="green_level_11">#88FF75</color>
+    <color name="green_level_12">#59159700</color>
+    <color name="green_level_13">#5959FF3F</color>
+    <color name="green_level_14">#ADFF00</color>
+    <color name="green_level_15">#C5FFAA</color>
+    <color name="green_level_16">#ECFFED</color>
+    <color name="green_level_17">#7BA37C</color>
+    <color name="green_level_18">#3D767680</color>
+    <color name="green_level_19">#6600C806</color>
+    <color name="green_level_20">#041F00</color>
+    <color name="green_level_21">#82D285</color>
+    <color name="green_level_22">#8ED200</color>
+    <color name="green_level_23">#073500</color>
+
+    <color name="green_level_24">#1AADFF00</color>
+    <color name="green_level_25">#1A00C806</color>
+    <color name="green_level_26">#CBFFC2</color>
+    <color name="green_level_27">#009D3F</color>
+    <color name="green_level_28">#AED6AF</color>
+    <color name="green_level_29">#4D8ED200</color>
+    <color name="green_level_30">#C3D8C4</color>
+
+    <color name="red_level_2">#E93C3C</color>
+
+    <color name="red_level_3">#FF4D00</color>
+    <color name="red_level_4">#1AFF4D00</color>
+
+    <color name="orange_level_1">#FF9900</color>
+    <color name="orange_level_2">#80F57C00</color>
+    <color name="orange_level_4">#1AFF9900</color>
+    <color name="orange_level_5">#E89806</color>
+    <color name="orange_level_6">#FFE5BB</color>
+    <color name="orange_level_7">#FFCAB3</color>
+
+    <color name="snack_bar_color">#32A9FF</color>
+    <color name="previous_year_eps_graph_circle_color">#4D00C806</color>
+
+    <color name="jetBlack">#1E1E1E</color>
+    <color name="baseBlack">#A0A0A0</color>
+    <color name="primary_grade_3">#ECFFED</color>
+    <color name="baseWhite">#FFFFFF</color>
+    <color name="dark_b1">#2D2D2D</color>
+    <color name="dark_b2">#434343</color>
+    <color name="dark_b3">#2B2B2B</color>
+    <color name="base_3">#0C0C0C</color>
+    <color name="secondary_100">#FFBE55</color>
+    <color name="secondary_60">#FFE5BB</color>
+    <color name="secondary_100_opacity_15">#26FFBE55</color>
+
+    <color name="sell_color">#FF4D00</color>
+    <color name="sell_color_opacity_15">#26FF4D00</color>
+    <color name="solid_others_3">#C39140</color>
+    <color name="others_2">#E89806</color>
+
+    <color name="black_1">#1B1B1B</color>
+    <color name="black_1_opacity_90">#E51B1B1B</color>
+    <color name="base_black_100">#090909</color>
+    <color name="base_black_80">#707070</color>
+    <color name="base_black_60">#A0A0A0</color>
+    <color name="base_black_40">#CFCFCF</color>
+    <color name="base_black_20">#F3F3F3</color>
+    <color name="gray_lightest">#F7F7F7</color>
+    <color name="seashell">#f1f1f1</color>
+    <color name="primary_color_80">#2bcb30</color>
+    <color name="color_primary_40">#82D285</color>
+
+    <color name="light_green">#ADFF00</color>
+    <color name="light_green_1">#8ED200</color>
+    <color name="light_green_opacity_10">#1AADFF00</color>
+    <color name="darkest_green_1">#041F00</color>
+    <color name="dark_green">#009D3F</color>
+
+    <color name="gray_opacity_12">#1F767680</color>
+    <color name="gray_opacity_60">#99EBEBF5</color>
+    <color name="gray_opacity_24">#3D767680</color>
+
+    <color name="bg_light_become_a_better_investor">#006C2B</color>
+    <color name="bg_dark_become_a_better_investor">#002513</color>
+
+    <color name="bg_light_experience_a_new_way_to_invest">#00943B</color>
+    <color name="bg_dark_experience_a_new_way_to_invest">#002513</color>
+
+    <color name="green_pantone">#00b649</color>
+    <color name="green_opacity_69">#b000C806</color>
+    <color name="primary_grade_5">#CED9CF</color>
+    <color name="secondary_80">#FFD899</color>
+
+    <color name="red">#E93C3C</color>
+
+
+    <color name="green_shadow">#7BA37C</color>
+
+    <color name="peach_light">#F5DCCD</color>
+
+</resources>
