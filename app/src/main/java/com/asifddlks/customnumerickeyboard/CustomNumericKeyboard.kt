@@ -107,11 +107,10 @@ class CustomNumericKeyboard @JvmOverloads constructor(
 
     // The activity (or some parent or controller) must give us
     // a reference to the current EditText's InputConnection
-    fun setInputConnectionToEditText(ic: InputConnection?) {
-        inputConnection = ic
-    }
 
-    fun setAttribute(textColor: Int, hasDotKey: Boolean) {
+    fun setAttribute(ic: InputConnection,textColor: Int, hasDotKey: Boolean) {
+        inputConnection = ic
+
         binding.button1.setTextColor(context.getColor(textColor))
         binding.button2.setTextColor(context.getColor(textColor))
         binding.button3.setTextColor(context.getColor(textColor))
@@ -125,6 +124,6 @@ class CustomNumericKeyboard @JvmOverloads constructor(
         binding.buttonDot.setTextColor(context.getColor(textColor))
         binding.buttonDelete.imageTintList = ColorStateList.valueOf(context.getColor(textColor))
 
-        binding.buttonDot.visibility = if(hasDotKey) View.VISIBLE else View.VISIBLE
+        binding.buttonDot.visibility = if(hasDotKey) View.VISIBLE else View.INVISIBLE
     }
 }

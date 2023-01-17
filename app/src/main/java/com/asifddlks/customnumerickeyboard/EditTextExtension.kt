@@ -25,22 +25,27 @@ fun EditText.setCustomNumericKeyboard(
     this.showSoftInputOnFocus = false
     keyboard.visibility = View.GONE
 
-    keyboard.setAttribute(textColor, hasDotKey)
-
-    val ic = this.onCreateInputConnection(EditorInfo())
-    keyboard.setInputConnectionToEditText(ic)
+    this.setOnClickListener {
+        keyboard.slideUp()
+        val inputConnection = this.onCreateInputConnection(EditorInfo())
+        keyboard.setAttribute(inputConnection,textColor, hasDotKey)
+    }
 
     this.setOnFocusChangeListener { view, hasFocus ->
         Log.d("hasFocus", "hasFocus: $hasFocus")
         if (hasFocus) {
             keyboard.slideUp()
+            val inputConnection = this.onCreateInputConnection(EditorInfo())
+            keyboard.setAttribute(inputConnection,textColor, hasDotKey)
+            //keyboard.setInputConnectionToEditText()
         } else {
-            keyboard.slideDown()
+            //keyboard.slideDown()
         }
     }
 
     nestedScrollView.setOnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
         if (kotlin.math.abs(scrollY - oldScrollY) > 0) {
+            keyboard.slideDown()
             this.clearFocus()
         }
     }
